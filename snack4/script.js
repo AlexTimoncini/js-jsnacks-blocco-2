@@ -9,9 +9,14 @@ console.log(lengthCheck(firstWord, secondWord));
 
 function lengthCheck(userFirstWord, userSecondWord){
     if (userFirstWord.length === userSecondWord.length){
+        console.log(userFirstWord, userSecondWord);
         console.log('the words have the same length');
-        return true
+    } else {
+        console.log('the words have different length');
+        if (userFirstWord.length < userSecondWord.length){
+            console.log(userSecondWord + ' is longer');
+        } else {
+            console.log(userFirstWord + ' is longer');
+        }
     }
-    console.log('the words have different length');
-    return false;
 }
