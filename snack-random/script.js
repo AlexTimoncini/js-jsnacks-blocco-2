@@ -11,7 +11,11 @@ console.log(getDifferentRandomInt(1, 5, array, 4));
  * @returns l'array con all'interno valori randomici diversi tra loro, tanti quanti times
  */
 function getDifferentRandomInt(min, max, voidArray, times){
-    while (voidArray.length != times){
+
+    if ((max - min) < times){
+        return [];
+    }
+    while (voidArray.length < times){
         let randomInt = Math.floor(Math.random() * max + min);
         if (!voidArray.includes(randomInt)){
             voidArray.push(randomInt);
