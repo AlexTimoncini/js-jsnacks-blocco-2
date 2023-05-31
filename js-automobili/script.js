@@ -1,5 +1,6 @@
 // Crea un array composto da 15 automobili.
-// Ogni oggetto automobile avrà le seguenti proprietà: marca, modello e alimentazione (benzina, diesel, gpl, elettrico, metano).
+// Ogni oggetto automobile avrà le seguenti proprietà: 
+// marca, modello e alimentazione (benzina, diesel, gpl, elettrico, metano).
 
 // Dividi le automobili in 3 array separati: 
 
